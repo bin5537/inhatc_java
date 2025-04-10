@@ -55,6 +55,11 @@ public class ReferenceString {
 		for (int i=0; i<tokens.length; i++) {
 			System.out.println(tokens[i].trim());
 		}
+		
+		// 향상된 for문 사용
+		for (String str: tokens) {
+			System.out.println(str.trim());
+		}
 	}
 
 }
