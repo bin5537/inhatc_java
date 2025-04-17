@@ -20,15 +20,17 @@ public class Car {
 	// 생성자 오버로딩(overLoading) => 객체 초기화를 다양하게
 	Car() {
 		// 기본 생성자
+		this.company = "Mola";
 		this.model = "Casper";
 		this.color = "Green";
 		this.maxSpeed = 180;
 	}
 	
 	Car(String model) {
-		this.model = model;
-		this.color = "Black";
-		this.maxSpeed = 300;
+		// this.model = model;
+		// this.color = "Black";
+		// this.maxSpeed = 300;
+		this("Mola", model, "Black", 300);
 	}
 	
 	Car(String model, String color) {
