@@ -17,14 +17,30 @@ public class Car {
 	// 생성자를 선언하지 않으면 기본생성자가 자동으로 생김
 	// 하지만 하나라도 생성자를 선언하면 안생김
 	
+	// 생성자 오버로딩(overLoading) => 객체 초기화를 다양하게
 	Car() {
 		// 기본 생성자
+		this.model = "Casper";
+		this.color = "Green";
+		this.maxSpeed = 180;
 	}
 	
-	Car(String rCompany, String rModel, String rColor, int rMaxSpeed) {
-		this.company = rCompany;
-		this.model = rModel;
-		this.color = rColor;
-		this.maxSpeed = rMaxSpeed;
+	Car(String model) {
+		this.model = model;
+		this.color = "Black";
+		this.maxSpeed = 300;
+	}
+	
+	Car(String model, String color) {
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = 300;
+	}
+	
+	Car(String company, String model, String color, int maxSpeed) {
+		this.company = company;
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = maxSpeed;
 	}
 }
