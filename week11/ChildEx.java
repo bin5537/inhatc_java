@@ -31,5 +31,10 @@ public class ChildEx {
 		Child child2 = (Child)parent;
 		child2.field2 = "bbb";
 		child2.method3();
+		
+		// 순수 부모 객체를 casting 해 보자.
+		// Parent parent2 = new Parent();
+		// Child child3 = (Child)parent2;
+		// child3.method3();
 	}
 }
